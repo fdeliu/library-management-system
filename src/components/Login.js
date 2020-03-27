@@ -23,7 +23,7 @@ const Login = props => {
       if (user) {
         props.history.push("/books");
       }
-    } catch (error) {
+    } catch(error) {
       M.toast({ html: `${error.message}`, classes: "red rounded" });
     }
   };
